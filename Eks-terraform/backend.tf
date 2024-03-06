@@ -1,7 +1,7 @@
 terraform {
   backend "s3" {
-    bucket = "ritika-backend-tfstate-bucket-eks" # Replace with your actual S3 bucket name
+    bucket = "terraform-statefile-ritika" # Replace with your actual S3 bucket name
     key    = "Jenkins/terraform.tfstate"
-    region = "ap-southeast-2"
+    region = "ap-south-1"
   }
 }
